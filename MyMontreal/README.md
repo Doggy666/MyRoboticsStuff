@@ -7,7 +7,7 @@ This is the final edit of the code that the King's Legacy team will be using dur
 ##### LAPTOP: <br />
  The LaptopCodeMontreal2018 (LCM) is used by the laptop. You will need to access the file within LCM that describes the robot you require to drive. On our laptops, this file is located on the desktop.
  
-## DRIVING CODE: <br />
+## DRIVING: <br />
  ##### INSTRUCTIONS: <br />
    1. Connect the robot to a power source and make sure it cannot damage itself or anything around in the rare occasion that the connection breaks and servos continue to move.
    2. Sign into the Laptop. Make sure you are connected to the correct robot's access point, this will take a few moments as the robot boots up and runs some preliminary files to establish an access point. It is important you access the right robot.
@@ -48,15 +48,26 @@ This is the final edit of the code that the King's Legacy team will be using dur
      - If this happens, within the code on the robot, decrease the frame rate and the size of each frame being sent. The lowest advised setting for frame rate is 10 fps and the lowest advised resolution for each frame is 720 x 480. <br />
    
 ## Resetting a Dynamixel ID
-
 1.	Navigate to **RoboCup-2018-Driving-Code/Dynamixel-Utilities**
 2.	Run the file **dxl_utils.py**
 3.	Follow the steps as outlined by the code
 4. Test the servo capability as show in the instructions below
 
 ## Testing A Servo’s Capability
-
 1.	Navigate to **RoboCup-2018-Driving-Code/Dynamixel-Utilities**
 2.	Run the file **testServo.py**
 
-**NOTE:** Microphone, Temperature and CO2 sensors soon to be included in the next few days
+## Ardunino Sensors: CO2 and Temperature
+1.	Follow Steps 1-5 under Driving
+2.	Enter "cd ArduinoSensors"
+3.	Enter "python3 sensors.py"
+
+## Sensors: Audio (Microphone)
+1.	Sign into the Laptop. Make sure you are connected to the correct robot's access point, this will take a few moments as the robot boots up and runs some preliminary files to establish an access point. It is important you access the right robot.
+2. Open two(2) terminal windows. They will be referred to as TW1 and TW2.
+3.	Within TW2, enter "cd Desktop/LaptopCodeMontreal2018/AudioLaptop".
+4.	Enter "python3 audioServer.py".
+5. Change to TW1.
+6.	Enter "ssh pi@192.168.100.1"
+7.	Enter "cd Desktop/Wless_code_RC18"
+8.	Enter "python3 audioClient.py"
