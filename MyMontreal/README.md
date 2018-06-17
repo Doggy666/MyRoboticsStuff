@@ -47,4 +47,16 @@ This is the final edit of the code that the King's Legacy team will be using dur
    - Large amount of lag: <br />
      - If this happens, within the code on the robot, decrease the frame rate and the size of each frame being sent. The lowest advised setting for frame rate is 10 fps and the lowest advised resolution for each frame is 720 x 480. <br />
    
+## Resetting a Dynamixel ID
+
+1.	Navigate to **RoboCup-2018-Driving-Code/Dynamixel-Utilities**
+2.	Run the file **dxl_utils.py**
+3.	Follow the steps as outlined by the code
+4. Test the servo capability as show in the instructions below
+
+## Testing A Servo’s Capability
+
+1.	Navigate to **RoboCup-2018-Driving-Code/Dynamixel-Utilities**
+2.	Run the file **testServo.py**
+
 **NOTE:** Microphone, Temperature and CO2 sensors soon to be included in the next few days
